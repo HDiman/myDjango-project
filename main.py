@@ -19,4 +19,6 @@ class User:
 user1 = User('Alice', 36, 'doctor')
 user2 = User('Bob', 24, 'developer')
 
-print (user1, user2)
+print(user1, user2)
+print(user1.name)
+

@@ -8,17 +8,17 @@
 # lst = [16, 30, 5, 5, 5, 3, -1, 0]
 # print(find_lonely(lst))
 
-from dataclasses import dataclass
-
-@dataclass
-class User:
-    name: str
-    age: int
-    profession: str
-
-user1 = User('Alice', 36, 'doctor')
-user2 = User('Bob', 24, 'developer')
-
-print(user1, user2)
-print(user1.name)
+# from dataclasses import dataclass
+#
+# @dataclass
+# class User:
+#     name: str
+#     age: int
+#     profession: str
+#
+# user1 = User('Alice', 36, 'doctor')
+# user2 = User('Bob', 24, 'developer')
+#
+# print(user1, user2)
+# print(user1.name)
 

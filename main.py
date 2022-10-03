@@ -45,6 +45,9 @@
 # print(count_primes(10000000))
 
 lst = [1, 8, 4, 10, 5]
+lst1 = []
 for ind, num in enumerate(lst):
-    print(num)
-    
+    lst1.append(num ** 2)
+
+# print(sorted(lst))
+print(sorted(lst1))

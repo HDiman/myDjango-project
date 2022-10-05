@@ -1,53 +1,12 @@
-# def find_lonely(lst):
-#     alone_num = [n for n in lst if n + 1 not in lst and n - 1 not in lst and lst.count(n) < 2]
-#     return sorted(alone_num)
-#
-# lst = [16, 30, 5, 5, 5, 3, -1, 0]
-# print(find_lonely(lst))
+import random
+import time
 
-# from dataclasses import dataclass
-#
-# @dataclass
-# class User:
-#     name: str
-#     age: int
-#     profession: str
-#
-# user1 = User('Alice', 36, 'doctor')
-# user2 = User('Bob', 24, 'developer')
-#
-# print(user1, user2)
-# print(user1.name)
+def rnd_num():
+    r = random.randint(1, 10)
+    return r
+
+while True:
+    time.sleep(5)
+    print(rnd_num())
 
 
-# # == Taichi module
-# import taichi as ti
-# ti.init()
-#
-# @ti.func
-# def is_prime(n: int):
-#     result = True
-#     for k in range(2, int(n ** 0.5) + 1):
-#         if n % k == 0:
-#             result = False
-#             break
-#     return result
-#
-# @ti.kernel
-# def count_primes(n: int) -> int:
-#     count = 0
-#     for k in range(2, n):
-#         if is_prime(k):
-#             count += 1
-#     return count
-#
-#
-# print(count_primes(10000000))
-
-lst = [1, 8, 4, 10, 5]
-lst1 = []
-for ind, num in enumerate(lst):
-    lst1.append(num ** 2)
-
-# print(sorted(lst))
-print(sorted(lst1))

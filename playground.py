@@ -60,5 +60,9 @@
 
 lst = [1, 8, 4, 10, 5]
 lst1 = tuple(i**2 for i in lst)
-print(lst1)
+print(sorted(lst1, reverse=True))
+
+for ind, num in enumerate(lst1):
+    print(lst1[ind])
+
 

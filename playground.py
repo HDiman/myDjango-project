@@ -58,11 +58,16 @@
 # print(sorted(lst1, reverse=True))
 
 
-lst = [1, 8, 4, 10, 5]
-lst1 = tuple(i**2 for i in lst)
-print(sorted(lst1, reverse=True))
+# lst = [1, 8, 4, 10, 5]
+# lst1 = tuple(i**2 for i in lst)
+# print(sorted(lst1, reverse=True))
+#
+# for ind, num in enumerate(lst1):
+#     print(lst1[ind])
 
-for ind, num in enumerate(lst1):
-    print(lst1[ind])
+
+my_set = set('hello world')
+# print(type(my_set))
+print(sorted(my_set, reverse=True))
 
 

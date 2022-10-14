@@ -74,25 +74,39 @@
 import random
 import time
 
+all_try = 0
+sum_all = 0
+num = 0
 sum_num = 5000
-print(sum_num)
+# print(sum_num)
 
 def rnd_num():
     rnd_ = random.randint(1, 10)
     return rnd_
 
 while True:
-    rnd = rnd_num()
-    print(rnd)
-
-    time.sleep(0.1)
-    if sum_num > 50000:
+    all_try += 1
+    sum_all += num
+    if all_try == 100:
+        avr = sum_all / all_try
+        print(avr)
         break
-    elif rnd == 10:
-        sum_num += 1000
-    else:
-        sum_num -= 100
-    print(sum_num)
+
+    while True:
+        rnd = rnd_num()
+        # print(rnd)
+
+        # time.sleep(0.1)
+        if sum_num > 50000:
+            print(num)
+            print(sum_num)
+            break
+        elif rnd == 10:
+            sum_num += 1000
+        else:
+            sum_num -= 100
+        num += 1
+        # print(sum_num)
 
 
 

@@ -66,9 +66,34 @@
 #     print(lst1[ind])
 
 
-my_set = set('hello world')
-# print(type(my_set))
-print(sorted(my_set, reverse=True))
+# my_set = set('hello world')
+# # print(type(my_set))
+# print(sorted(my_set, reverse=True))
+
+
+import random
+import time
+
+sum_num = 5000
+print(sum_num)
+
+def rnd_num():
+    rnd_ = random.randint(1, 10)
+    return rnd_
+
+while True:
+    rnd = rnd_num()
+    print(rnd)
+
+    time.sleep(0.1)
+    if sum_num > 50000:
+        break
+    elif rnd == 10:
+        sum_num += 1000
+    else:
+        sum_num -= 100
+    print(sum_num)
+
 
 
 

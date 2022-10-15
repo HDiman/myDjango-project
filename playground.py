@@ -98,7 +98,7 @@ while True:
 
         # time.sleep(0.1)
         if sum_num > 50000:
-            print(num)
+            print(num, end=" | ")
             print(sum_num)
             break
         elif rnd == 10:
